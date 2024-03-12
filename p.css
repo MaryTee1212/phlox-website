@@ -1,0 +1,20 @@
+/* Frame 21 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 30px;
+
+position: absolute;
+width: 679px;
+height: 330px;
+left: 292px;
+top: 125px;
+
+ .request-text {
+  background-color: #f59c18;
+height: 100%;
+  width: 50%;

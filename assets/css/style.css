@@ -14,7 +14,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* gap: 40px; */
+  column-gap: 35%;
   /* padding: 10px; */
   padding-left: 10px;
   padding-right: 60px;
@@ -26,7 +26,7 @@ header {
 }
 .navbar > ul > li {
   list-style: none;
-  gap: 40px;
+  /* gap: 100px; */
 }
 .navbar > ul > li > a {
   text-decoration: none;
@@ -76,6 +76,7 @@ header {
 }
 .about-section {
   display: flex;
+  column-gap: 15%;
   padding-top: 80px;
   padding-bottom: 50px;
 }
@@ -170,6 +171,9 @@ header {
   background-color: #f59c18;
   transition: 0.5s;
 }
+/* .about-mission-one p:hover{
+color: #ffffff;
+} */
 /* END OF HOVER PROCESS for mission one */
 
 /* ON HOVER PROCESS for VISON ONE */
@@ -278,25 +282,19 @@ header {
 .work-one:hover {
   box-sizing: border-box;
   border: 15px solid white;
-  box-shadow: 10px 10px #ffffff;
-  transition: 0.4s;
-  background-color: #fbfff4;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.02);
   opacity: 1;
 }
 
 .work-two:hover {
   box-sizing: border-box;
   border: 15px solid white;
-  box-shadow: 10px 10px 5px #ffffff;
-  transition: 0.4s;
-  background-color: rgb(236, 223, 223);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.02);
 }
 .work-three:hover {
   box-sizing: border-box;
   border: 15px solid white;
-  box-shadow: 10px 10px 5px #ffffff;
-  transition: 0.4s;
-  background-color: rgb(236, 223, 223);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.02);
 }
 .text-one,
 .text-two {
@@ -321,15 +319,16 @@ header {
 .service-duty h1 {
   font-weight: 700;
   font-size: 60px;
-  line-height: 90px;
+  line-height: 40px;
   text-align: center;
 }
+
 .intro {
   display: flex;
   flex-direction: row;
   text-align: center;
-  margin: 0px 45% 0px 40%;
-  column-gap: 40px;
+  margin: 50px 45% 0px 40%;
+  column-gap: 30px;
   background-color: #fedb03;
   padding: 0px 0px 0px 5px;
   border-radius: 50px;
@@ -337,17 +336,20 @@ header {
 }
 
 .intro-btn {
-  padding: 20px 0px 0px 4px;
+  padding: 12px 20px 0px 15px;
 }
 
 .intro p {
   font-weight: 700;
+  font-size: 13px;
+  padding-left: 10px;
 }
 .intro:hover {
   background-color: #ffffff;
 }
 .fa-play-circle {
   color: #002240;
+  /* padding-bottom: 9px; */
 }
 
 .team {
@@ -372,11 +374,12 @@ header {
   margin-left: 40px;
   text-align: center;
 }
+
 .request {
   background-image: url(/assets/images/mast.png);
+  background-repeat: no-repeat;
   text-align: left;
   padding: 100px;
-  cursor: pointer;
 }
 
 .request p {
@@ -391,11 +394,12 @@ header {
   flex-direction: row;
   background-color: #f59c18;
   text-align: center;
-  margin: 0px 75% 0px 0%;
+  margin: 0px 77% 0px 0%;
   column-gap: 35px;
   padding: 0px 0px 0px 5px;
   border-radius: 50px;
   color: #b9c7d4;
+  cursor: pointer;
 }
 
 .fa-chevron-circle-right {
@@ -488,6 +492,9 @@ footer h3 {
   text-align: left;
 }
 
+.container-three{
+  text-align: left;
+}
 .container-four {
   text-align: left;
 }
@@ -501,58 +508,162 @@ footer p {
   line-height: 70px;
   color: #ffffff;
 }
-/* Media Queries */
-@media only screen and (min-width: 600px) {
-  .logo-holder {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
 
-  .navbar ul {
-    flex-direction: row;
-    gap: 20px;
-  }
+/* media query */
 
-  .banner {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+@media screen and (max-width: 600px) {
 
-  .left,
-  .right {
-    margin-left: 0;
-  }
+  /* I CAN DELETE THIS */
 
-  .about-section {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+.navbar ul li {
+    display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .logo-holder {
-    padding-top: 20px;
+ .logo-holder {
+    display: flex;
+    flex-direction: row;
   }
 
-  .navbar ul {
-    gap: 10px;
-  }
-
-  .banner {
+.navbar ul li:nth-last-child(-n+2) {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+}
 
-  .left,
-  .right {
-    margin-left: 0;
+.navbar ul li:nth-last-child(-n+2) {
+        display: flex;
+        flex-direction: column;
+        column-gap: 80%;
+       
+    }
+
+    .fa-bars{
+      margin-left: 50px;
+    }
+
+  /* IT END HERE */
+
+  .banner{
+    display: block;
     text-align: center;
   }
 
-  .about-section {
-    padding-top: 30px;
+  .innovation {
+    font-size: 80px;
   }
+
+  .contracture {
+    font-size: 50px;
+  }
+  .banner p {
+    font-size: 15px;
+  }
+
+  .right img{
+    padding-top: 30px;
+    width: 100%;
+  }
+/* BANNER SECTION ENDS HERE */
+
+.about-section{
+  display: block;
+}
+
+.about-section img{
+  padding-bottom: 20px;
+}
+
+.professional{
+  font-size: 45px;
+}
+
+.about-section p{
+  text-align: left;
+}
+
+.do-section {
+    display: block;
+    /* column-gap: 40px; */
+  } 
+
+.improve{
+    font-size: 20px;
+  }
+
+  .row-one, .row-two{
+    font-size: 10px;
+    display: block;
+  }
+  .services{
+    margin: 0px;
+    text-align: center;
+  } 
+
+  .services p{
+    font-size: 20px;
+    /* font-weight: 600; */
+
+  }
+
+  .text-one, .text-two, .text-three{
+    text-align: center;
+
+  }
+   .service-headline{
+    font-size: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+   }
+  .tools{
+    display: block;
+    
+  }
+
+  .service-duty{
+    text-align: center;
+  }
+
+  .service-duty h1{
+    font-size: 40px;
+  }
+
+   .intro{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 10%;
+  background-color: #fedb03;
+  margin: 0px 50% 0px 5px;
+  border-radius: 50px;
+  color: #002240;
+} 
+
+/* .fa-play-circle{
+  padding-bottom: 15px;
+} */
+
+  /* .about-section > p {
+    font-size: 10px;
+  } */
+
+  .whole-team {
+    display: block;
+    width: 15px;
+  }
+  .sign{  
+  flex-direction: row;
+  background-color: #f59c18;
+  text-align: center;
+  margin: 0px 25% 0px 0%;
+  column-gap: 25px;
+  padding: 0px 0px 0px 5px;
+  border-radius: 50px;
+  color: #b9c7d4;
+  cursor: pointer;
+}
+  
+  .sub-footer {
+    display: block;
+  }
+ 
 }
