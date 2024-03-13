@@ -519,6 +519,7 @@ footer p {
   .logo-holder {
     display: flex;
     flex-direction: row;
+    column-gap: 15px;
   }
 
   .navbar ul li:nth-last-child(-n + 2) {
@@ -529,24 +530,25 @@ footer p {
   .navbar ul li:nth-last-child(-n + 2) {
     display: flex;
     flex-direction: column;
-    column-gap: 40%;
+    /* column-gap: 50%; */
   }
 
   .fa-bars {
-    margin-left: 10px;
+    margin-left: 35px;
   }
 
   .banner {
     display: block;
     text-align: center;
+    /* margin: 0px; */
   }
 
   .innovation {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   .contracture {
-    font-size: 50px;
+    font-size: 40px;
   }
   .banner p {
     font-size: 15px;
@@ -555,6 +557,8 @@ footer p {
   .right img {
     padding-top: 30px;
     width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
   }
   /* BANNER SECTION ENDS HERE */
 
@@ -577,6 +581,7 @@ footer p {
   .do-section {
     display: block;
     /* column-gap: 40px; */
+    text-align: left;
   }
 
   .improve {
@@ -587,6 +592,7 @@ footer p {
   .row-two {
     font-size: 10px;
     display: block;
+    text-align: center;
   }
   .services {
     margin: 0px;
