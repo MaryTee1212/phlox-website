@@ -558,12 +558,19 @@ footer p {
     padding-top: 30px;
     width: 100%;
     margin-left: 0px;
-    padding-left: 0px;
+    /* padding-right: 20px;
+    padding-left: 0px; */
   }
   /* BANNER SECTION ENDS HERE */
 
   .about-section {
     display: block;
+    /* text-align: left; */
+  }
+
+  .about-section-text {
+    text-align: right;
+    /* margin-right: 5px; */
   }
 
   .about-section img {
@@ -605,13 +612,12 @@ footer p {
   }
 
   .text-one,
-  .text-two,
-  .text-three {
+  .text-two {
     text-align: center;
   }
 
-  .text-three{
-    text-align: left;
+  .text-three {
+    text-align: center;
   }
   .service-headline {
     font-size: 10px;
@@ -636,7 +642,7 @@ footer p {
     flex-direction: row;
     column-gap: 10%;
     background-color: #fedb03;
-    margin: 0px 50% 0px 5px;
+    margin: 0px 10% 0px 8px;
     border-radius: 50px;
     color: #002240;
   }
@@ -656,6 +662,7 @@ footer p {
   .whole-team {
     display: block;
     width: 15px;
+    margin: 0px;
   }
   .sign {
     flex-direction: row;
