@@ -673,13 +673,25 @@ footer p {
     flex-direction: row;
     background-color: #f59c18;
     text-align: center;
-    margin: 0px 25% 0px 0%;
-    column-gap: 25px;
-    padding: 0px 0px 0px 5px;
+    margin: 0px 2% 0px 0%;
+    column-gap: 30px;
+    padding: 0px 10% 0px 5px;
     border-radius: 50px;
     color: #b9c7d4;
     cursor: pointer;
   }
+
+  .sign p {
+    font-size: 13px;
+  }
+
+  /* .request-text {
+    text-align: left;
+  } */
+
+  /* .fa-chevron-circle-right {
+    padding-bottom: 0;
+  } */
 
   .sub-footer {
     display: block;
