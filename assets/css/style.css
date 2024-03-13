@@ -570,11 +570,16 @@ footer p {
 
   .about-section-text {
     text-align: right;
+    font-size: 17px;
     /* margin-right: 5px; */
   }
 
   .about-section img {
     padding-bottom: 20px;
+  }
+
+  .second-article {
+    font-size: 17px;
   }
 
   .professional {
