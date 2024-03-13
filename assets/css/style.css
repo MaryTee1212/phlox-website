@@ -512,8 +512,6 @@ footer p {
 /* media query */
 
 @media screen and (max-width: 600px) {
-  /* I CAN DELETE THIS */
-
   .navbar ul li {
     display: none;
   }
@@ -531,14 +529,12 @@ footer p {
   .navbar ul li:nth-last-child(-n + 2) {
     display: flex;
     flex-direction: column;
-    column-gap: 80%;
+    column-gap: 40%;
   }
 
   .fa-bars {
-    margin-left: 50px;
+    margin-left: 10px;
   }
-
-  /* IT END HERE */
 
   .banner {
     display: block;
@@ -546,7 +542,7 @@ footer p {
   }
 
   .innovation {
-    font-size: 80px;
+    font-size: 70px;
   }
 
   .contracture {
