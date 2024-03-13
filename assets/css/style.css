@@ -571,7 +571,7 @@ footer p {
   }
 
   .professional {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .about-section p {
@@ -608,6 +608,10 @@ footer p {
   .text-two,
   .text-three {
     text-align: center;
+  }
+
+  .text-three{
+    text-align: left;
   }
   .service-headline {
     font-size: 10px;
