@@ -525,7 +525,7 @@ footer p {
   .logo-holder {
     display: flex;
     flex-direction: row;
-    column-gap: 3px;
+    column-gap: 8px;
     margin: 0px;
   }
 
